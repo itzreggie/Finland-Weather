@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationBar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+
+
+            <TextView
+                android:id="@+id/textViewGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good_evening"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/theduo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/textViewGreeting"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/textViewCityName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lahti"
+                    android:textColor="@android:color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/weatherimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/vertical_arrow"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/todo"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/textViewTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/firstscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/theduo"
+                android:layout_marginTop="20dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCity"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/search_for_any_city_or_country"
+                    android:inputType="textPersonName"
+                    android:autofillHints="" />
+
+                <!-- Get Button -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnGet"
+                    android:layout_marginBottom="10dp"
+                    android:background="#0070c7"
+                    android:textColor="@android:color/white"
+                    android:onClick="getWeatherDetails"
+                    android:text="@string/get"
+                    app:backgroundTint="@null" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="0dp"
+                    android:id="@+id/tvResult" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/buttontowikifinn"
+                android:layout_width="172dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="122dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="116dp"
+                android:background="#0070c7"
+                android:text="@string/click_here"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstscroll"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="5dp"
+                android:text="Do you want to know all about finnish history?"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom navigation bar -->
+    <FrameLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:background="@null"
+                android:src="@drawable/icons8_home"
+                android:contentDescription="@string/homebutton" />
+
+            <ImageButton
+                android:id="@+id/quizbutton"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:background="@null"
+                android:src="@drawable/icons8_quiz_50"
+                android:contentDescription="@string/quizbutton" />
+
+            <ImageButton
+                android:id="@+id/settingsbutton"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:background="@null"
+                android:src="@drawable/icons8_setting"
+                android:contentDescription="@string/settingbutton" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/gradient_blur"
+            android:paddingTop="20dp" />
+    </FrameLayout>
+
+</RelativeLayout>

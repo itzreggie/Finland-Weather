@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="65dp">
+
+        <LinearLayout
+            android:id="@+id/quizLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:id="@+id/homeButton"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:background="@null"
+                android:src="@drawable/icons8_home" />
+
+            <ImageButton
+                android:id="@+id/quizbutton"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:background="@null"
+                android:src="@drawable/icons8_quiz_50" />
+
+            <ImageButton
+                android:id="@+id/settingsbutton"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:background="@null"
+                android:src="@drawable/icons8_setting" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/gradient_blur"
+            android:paddingTop="20dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>
