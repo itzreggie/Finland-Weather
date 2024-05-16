@@ -1,6 +1,6 @@
 # Finland & Weather
 
-Finland & Weather is a versatile application that integrates multiple APIs to provide users with valuable information about Finland and other parts of the world.
+Finland & Weather is an application that can be used to provide users with valuable information about Finland and other parts of the world weather-wise and also get to know more about finnish history.
 This is the link to the video of the project running - https://lut-my.sharepoint.com/:v:/g/personal/rejoice_ekong_student_lut_fi/EdLSfMJAifFLiGdSoTX8uywB0Qjwsd96yqFQBRzMiZopEA?e=pYWZkc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### Navigation Options
